@@ -6,6 +6,7 @@ import base64
 cred_file = open("./credentials.txt", 'r')
 user = cred_file.readline()
 psw = cred_file.readline()
+cred_file.close()
 
 credentials = user + ':' + psw
 
